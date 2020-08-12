@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Humanitas</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        $( function() {
+            $( "#profile-tabs" ).tabs();
+            $( "#payment-date" ).datepicker();
+            $( "#reservation-date" ).datepicker();
+        } );
+    </script>
+
+</head>
+<body id="your-profile">
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/humanitas-logo.svg" alt=""></a>
+        </div>
+        <div class="mobile-header">
+            <div class="search search-toggler">
+                <i class="icon-humanitas icon-search icon" aria-hidden="true"></i>
+            </div>
+            <div class="mobile-menu menu-toggler">
+                <i class="icon-humanitas icon-menu" aria-hidden="true"></i>
+            </div>
+        </div>
+        <nav>
+            <div class="close-mobile-menu menu-toggler">
+                <i class="icon-humanitas icon-close" aria-hidden="true"></i>
+            </div>
+            <ul class="top-nav">
+                <li><a href="#">Ospedali</a></li>
+                <li><a href="#">Centri ambulatoriali</a></li>
+                <li><a href="#">Università</a></li>
+                <li><a href="#">Ricerca</a></li>
+                <li><a href="#">Congressi</a></li>
+                <li class="languages">
+                    <a href="#">IT</a>
+                    <ul>
+                        <li>
+                            <a href="#">EN</a>
+                        </li>
+                        <li>
+                            <a href="#">RU</a>
+                        </li>
+                        <li>
+                            <a href="#">CN</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="social">
+                    <a href="#"><i class="icon-humanitas icon-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="icon-humanitas icon-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="icon-humanitas icon-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="icon-humanitas icon-youtube" aria-hidden="true"></i></a>
+                </li>
+                <li class="call numbers-toggler">
+                    <i class="icon-humanitas icon-phone icon" aria-hidden="true"></i>
+                </li>
+            </ul>
+            <ul class="main-nav">
+                <li><a href="#">Centri</a></li>
+                <li><a href="doctors.html">Medici</a></li>
+                <li><a href="#">Malattie</a></li>
+                <li><a href="#">Cure</a></li>
+                <li><a href="visits-and-exams.html">Visite ed esami</a></li>
+                <li class="submenu"><span>Enciclopedia</span>
+                    <ul>
+                        <li><a href="#">Alimenti</a></li>
+                        <li><a href="#">Anatomia - Corpo umano</a></li>
+                        <li><a href="#">Minerali</a></li>
+                        <li><a href="#">Primo soccorso</a></li>
+                        <li><a href="#">Principi attivi</a></li>
+                        <li><a href="#">Sintomi e disturbi</a></li>
+                        <li><a href="#">Specialisti</a></li>
+                        <li><a href="#">Strumenti medici</a></li>
+                        <li><a href="#">Vaccini</a></li>
+                        <li><a href="#">Vitamine</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="#">Prenotazioni</a></li>
+                <li><a href="sign-in.html">Accedi</a></li>
+                <li class="search search-toggler">
+                    <i class="icon-humanitas icon-search icon" aria-hidden="true"></i>
+                </li>
+            </ul>
+            <div class="personal-menu">
+                <ul class="section-nav">
+                    <li><a href="find-reservation.html">Trova prenotazione</a></li>
+                    <li><a href="services.html">Prestazioni</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li class="active"><a href="your-profile.html">Buongiorno Pietro</a></li>
+                </ul>
+            </div>
+            <div class="mobile-contacts">
+                <div class="title">DI COSA HAI BISOGNO?</div>
+                <section>
+                    CENTRALINO<br/>
+                    <a class="phone-number" href="tel:+390282241">+39 02 8224 1</a><br/>
+                    Se hai bisogno di maggiori informazioni o desideri...
+                </section>
+
+                <section>
+                    PRENOTAZIONI PRIVATE<br/>
+                    <a class="phone-number" href="tel:+390282248224">+39 02 8224 8224</a><br/>
+                    Prenota una visita telefonando
+                    a questo numero, oppure puoi<br/>
+                    <a href="#">PRENOTARE ONLINE QUI</a>
+                </section>
+            </div>
+        </nav>
+    </header>
+    <div class="search-overlay">
+        <div class="search-wrapper">
+            <div class="close search-toggler"><i class="icon-humanitas icon-close" aria-hidden="true"></i></div>
+            <div class="search-field">
+                <label for="search-input">Cosa stai cercando?</label>
+                <input type="text" id="search-input">
+            </div>
+        </div>
+    </div>
+    <div class="usefull-numbers-overlay">
+        <div class="close numbers-toggler"><i class="icon-humanitas icon-close" aria-hidden="true"></i></div>
+        <h3>DI COSA HAI BISOGNO?</h3>
+        <section>
+            <div class="section-title">centralino</div>
+            <div class="phone"><a href="">+39 00 0000 0000</a></div>
+            Se hai bisogno di maggiori
+            informazioni o desideri...
+        </section>
+        <section>
+            <div class="section-title">prenotazioni private</div>
+            <div class="phone"><a href="">+39 00 0000 0000</a></div>
+            Prenota una visita telefonando
+            a questo numero, oppure puoi
+            <a href="#">PRENOTARE ONLINE QUI</a>
+        </section>
+        <section class="center-number">
+            <a href="">
+                <div class="section-title">CANCER CENTER</div>
+                <div class="phone">+39 00 0000 0000</div>
+            </a>
+        </section>
+        <section class="center-number">
+            <a href="">
+                <div class="section-title">CARDIO CENTER</div>
+                <div class="phone">+39 00 0000 0000</div>
+            </a>
+        </section>
+        <section class="center-number">
+            <a href="">
+                <div class="section-title">centro obesità</div>
+                <div class="phone">+39 00 0000 0000</div>
+            </a>
+        </section>
+        <section class="center-number">
+            <a href="">
+                <div class="section-title">centro oculistico</div>
+                <div class="phone">+39 00 0000 0000</div>
+            </a>
+        </section>
+        <section class="center-number">
+            <a href="">
+                <div class="section-title">fertility center</div>
+                <div class="phone">+39 00 0000 0000</div>
+            </a>
+        </section>
+        <section class="center-number">
+            <a href="tel:#">
+                <div class="section-title">neuro center</div>
+                <div class="phone">+39 00 0000 0000</div>
+            </a>
+        </section>
+        <section class="center-number">
+            <a href="">
+                <div class="section-title">ortho center</div>
+                <div class="phone">+39 00 0000 0000</div>
+            </a>
+        </section>
+    </div>
+
+    <main>
+        <div class="wrapper">
+            <h1>Buongiorno pietro.rossi@gmail.com</h1>
+            <div id="profile-tabs">
+                <ul>
+                    <li><a href="#your-reservations">Le tue prenotazioni</a></li>
+                    <li><a href="#your-settings">Impostazioni</a></li>
+                </ul>
+                <div id="your-reservations">
+                    <div class="reservations-filters">
+                        <div>
+                            <label for="">Stato del pagamento</label>
+                            <select name="" id="">
+                                <option value="">Tutto</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Data di pagamento</label>
+                            <div class="datepicker-wrapper">
+                                <input type="text" class="datepicker" id="payment-date">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">Data di prenotazione</label>
+                            <div class="datepicker-wrapper">
+                                <input type="text" class="datepicker" id="reservation-date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results">
+                        <h2>Risultati di ricerca</h2>
+                        <ul class="results-list">
+                            <li>
+                                <div>
+                                    <h2>Visita oculistica</h2>
+                                    <div class="date">19 Settembre 2016, ore 11</div>
+                                    <div class="patient-infos">Paziente: <b>Mario Rossi</b></div>
+                                    <div class="doctor-infos">Medico: <b>Luigi Bianchi</b></div>
+                                </div>
+                                <ul class="result-menu">
+                                    <li><a href="#"><i class="icon-humanitas icon-file-pdf"></i> SCARICA PFD</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-preparation"></i> PREPARAZIONE</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-calendar"></i> CAMBIA DATE</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-close"></i> ELIMINA</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <h2>Visita oculistica</h2>
+                                    <div class="date">19 Settembre 2016, ore 11</div>
+                                    <div class="patient-infos">Paziente: <b>Mario Rossi</b></div>
+                                    <div class="doctor-infos">Medico: <b>Luigi Bianchi</b></div>
+                                </div>
+                                <ul class="result-menu">
+                                    <li><a href="#"><i class="icon-humanitas icon-file-pdf"></i> SCARICA PFD</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-preparation"></i> PREPARAZIONE</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-calendar"></i> CAMBIA DATE</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-close"></i> ELIMINA</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <h2>Visita oculistica</h2>
+                                    <div class="date">19 Settembre 2016, ore 11</div>
+                                    <div class="patient-infos">Paziente: <b>Mario Rossi</b></div>
+                                    <div class="doctor-infos">Medico: <b>Luigi Bianchi</b></div>
+                                </div>
+                                <ul class="result-menu">
+                                    <li><a href="#"><i class="icon-humanitas icon-file-pdf"></i> SCARICA PFD</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-preparation"></i> PREPARAZIONE</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-calendar"></i> CAMBIA DATE</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-close"></i> ELIMINA</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <h2>Visita oculistica</h2>
+                                    <div class="date">19 Settembre 2016, ore 11</div>
+                                    <div class="patient-infos">Paziente: <b>Mario Rossi</b></div>
+                                    <div class="doctor-infos">Medico: <b>Luigi Bianchi</b></div>
+                                </div>
+                                <ul class="result-menu">
+                                    <li><a href="#"><i class="icon-humanitas icon-file-pdf"></i> SCARICA PFD</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-preparation"></i> PREPARAZIONE</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-calendar"></i> CAMBIA DATE</a></li>
+                                    <li><a href="#"><i class="icon-humanitas icon-close"></i> ELIMINA</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div id="your-settings">
+                    <div class="fields-list">
+                        <div class="basic-settings">
+                            <div class="field">
+                                <span>Pietro</span>
+                                <div class="actions">
+                                    <i class="icon-humanitas icon-edit"></i>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" value="Pietro">
+                                <div class="actions">
+                                    <i class="icon-humanitas icon-check"></i>
+                                    <i class="icon-humanitas icon-close"></i>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <span>Data di nascita</span>
+                                <div class="actions">
+                                    <i class="icon-humanitas icon-edit"></i>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <span>Luogo di nascita</span>
+                                <div class="actions">
+                                    <i class="icon-humanitas icon-edit"></i>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <span>Codice fiscale</span>
+                                <div class="actions">
+                                    <i class="icon-humanitas icon-edit"></i>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <span>Telefono</span>
+                                <div class="actions">
+                                    <i class="icon-humanitas icon-edit"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="core-settings">
+                            <div class="field">
+                                <span>paolo.rossi@gmail.com</span>
+                                <div class="actions">
+                                    <i class="icon-humanitas icon-edit"></i>
+                                </div>
+                            </div>
+                            <div class="field password">
+                                <span>Password</span>
+                                <div class="actions">
+                                    <i class="icon-humanitas icon-edit"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#"><i class="icon-humanitas icon-close"></i> Elimina account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logos">
+            <div class="wrapper">
+                <ul>
+                    <li><img src="images/placeholder-logo.png"></li>
+                    <li><img src="images/placeholder-logo.png"></li>
+                    <li><img src="images/placeholder-logo.png"></li>
+                    <li><img src="images/placeholder-logo.png"></li>
+                    <li><img src="images/placeholder-logo.png"></li>
+                    <li><img src="images/placeholder-logo.png"></li>
+                    <li><img src="images/placeholder-logo.png"></li>
+                    <li><img src="images/placeholder-logo.png"></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-nav">
+            <div class="wrapper">
+                <section>
+                    <article>
+                        <h2>Chi siamo</h2>
+                        <p>
+                            Humanitas Research Hospital è un ospedale
+                            ad alta specializzazione, centro di Ricerca
+                            e sede di insegnamento universitario e
+                            promuove la salute, la prevenzione e la
+                            diagnosi precoce.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>Dove siamo</h2>
+                        <p>
+                            Via Manzoni 56, Rozzano (Milano) - ITALY
+                        </p>
+                    </article>
+                    <article class="call-us">
+                        <h2>Per qualsiasi informazione contattaci al numero</h2>
+                        <i class="icon-humanitas icon-phone-full"></i>
+                    </article>
+                    <article class="social">
+                        <h2>Seguici su</h2>
+                        <ul>
+                            <li><a href="#"><i class="icon-humanitas icon-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="icon-humanitas icon-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="icon-humanitas icon-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="icon-humanitas icon-youtube" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </article>
+                </section>
+                <section>
+                    <h2>I Centri</h2>
+                    <ul>
+                        <li><a href="#">Cancer Center</a></li>
+                        <li><a href="#">Cardio Center</a></li>
+                        <li><a href="#">Centro Obesità</a></li>
+                        <li><a href="#">Centro Oculistico</a></li>
+                        <li><a href="#">Centro per le malattie</a></li>
+                        <li><a href="#">infiammatorie croniche</a></li>
+                        <li><a href="#">dell’intestino</a></li>
+                        <li><a href="#">Check-up and diagnosi</a></li>
+                        <li><a href="#">Fertility Center</a></li>
+                        <li><a href="#">Neuro Center</a></li>
+                        <li><a href="#">Ortho Center</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Humanitas</h2>
+                    <ul>
+                        <li><a href="#">Ufficio stampa e Comunicazione</a></li>
+                        <li><a href="#">Pronto Soccorso</a></li>
+                        <li><a href="#">Comitato etico</a></li>
+                        <li><a href="#">Servizi assistenziali</a></li>
+                        <li><a href="#">Codice di comportamento</a></li>
+                        <li><a href="#">Modello di Organizzazione, Gestione e Controllo ex D.lgs. 231/01</a></li>
+                        <li><a href="#">Informazioni legali</a></li>
+                        <li><a href="#">Fondazione Humanitas per la Ricerca</a></li>
+                        <li><a href="#">Fondazione Humanitas</a></li>
+                        <li><a href="#">Fondazione Ariel</a></li>
+                        <li><a href="#">Humanitasalute.it</a></li>
+                        <li><a href="#">Il Magazine di Humanitas</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Ospedali Humanitas</h2>
+                    <ul>
+                        <li><a href="#">Humanitas Gavazzeni</a></li>
+                        <li><a href="#">Humanitas Mater Domini</a></li>
+                        <li><a href="#">Humanitas Centro Catanese di Oncologia</a></li>
+                        <li><a href="#">Humanitas Cellini</a></li>
+                        <li><a href="#">Humanitas Gradenigo</a></li>
+                        <li><a href="#">Humanitas San Pio X</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Enciclopedia</h2>
+                    <ul>
+                        <li><a href="#">Alimenti</a></li>
+                        <li><a href="#">Anatomia - Corpo umano</a></li>
+                        <li><a href="#">Minerali</a></li>
+                        <li><a href="#">Primo soccorso</a></li>
+                        <li><a href="#">Principi attivi</a></li>
+                        <li><a href="#">Sintomi e disturbi</a></li>
+                        <li><a href="#">Specialisti</a></li>
+                        <li><a href="#">Strumenti medici</a></li>
+                        <li><a href="#">Vaccini</a></li>
+                        <li><a href="#">Vitamine</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="general-infos">
+            <div class="wrapper">
+                <div class="company-info">
+                    <span>Istituto Clinico Humanitas</span><br/>
+                    Via Manzoni 56, Rozzano (Milano), Italia - P. IVA 10125410158<br/>
+                    Autorizzazioni: Decreto Presidente Regione Lombardia n°1906 del 18.04.1996<br/>
+                    Direttore Sanitario: dott. Norberto Silvestri
+                </div>
+                <div class="company-menu">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Mappa del sito</a></li>
+                        <li><a href="#">Informazioni societarie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
